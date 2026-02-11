@@ -21,3 +21,8 @@ Requires Python 3.8+ and the following libraries:
 To run the primary simulation and generate the "Spherical Bulge" vs "Flat Manifold" plots:
 ```bash
 python run_cah_local.py
+```
+
+## Results
+
+![Curvature Scaling Results](CAH_Scaling_Result.png)
