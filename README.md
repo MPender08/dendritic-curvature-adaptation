@@ -1,4 +1,4 @@
-# Dynamic Curvature Adaptation (CAH)
+# Dendritic Curvature Adaptation (CAH)
 
 This repository contains the simulation framework for the **Curvature Adaptation Hypothesis (CAH)**, proposing that the brain utilizes SST-interneuron mediated dendritic shunting to dynamically regulate functional manifold curvature.
 
