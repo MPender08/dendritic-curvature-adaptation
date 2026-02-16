@@ -79,4 +79,4 @@ If you use this code or the CAH or MPT framework in your research, please cite t
 
 ## Acknowledgments
 
-This research was assisted by Gemini 3 Flash and Gemini 3 Pro for drafting text, generating simulation code, and structural argument analysis.
+This research was assisted by Gemini 3 Flash and Gemini 3 Pro for drafting text, generating simulation code, and structural argument analysis. AI was used as a symbolic reasoning engine to assist in mapping biophysical parameters to differential geometric formalisms.
