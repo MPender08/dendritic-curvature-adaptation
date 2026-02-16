@@ -1,0 +1,7 @@
+networkx
+numpy
+POT
+scipy
+matplotlib
+joblib
+tqdm
