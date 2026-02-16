@@ -1,6 +1,6 @@
 # Dynamic Curvature Adaptation
 
-This repository contains the official simulation suite for the Curvature Adaptation Hypothesis (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry.
+This repository contains the official simulation suite for the Curvature Adaptation Hypothesis (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry, and the Metabolic Phase Transition, a theoretical framework that reframes consciousness as a thermodynamic necessity for high-dimensional biological systems.
 
 The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
 
