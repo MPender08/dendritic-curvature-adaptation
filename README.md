@@ -2,7 +2,9 @@
 
 This repository contains the official simulation suite for the Curvature Adaptation Hypothesis (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry.
 
-Manuscript available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
+The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
+
+The Metabolic Phase Transition manuscript is available here: [https://doi.org/10.5281/zenodo.18655523](https://doi.org/10.5281/zenodo.18655523)
 
 ## Overview
 
@@ -23,6 +25,8 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
         Demented: "Geometric Collapse" (trapped Euclidean) via stochastic pruning.
 
 ## Installation
+
+The script energy_ROI_tracker.py depends on the physics engine in run_CAH_scaling_analysis.py. Please ensure both files are downloaded to the same directory before running.
 
 This project requires Python 3.8+ and the following scientific libraries:
 ```
@@ -47,8 +51,8 @@ pip install networkx numpy matplotlib pot tqdm joblib
 
 **4. Metabolic ROI Tracker** (energy_ROI_tracker.py)
 
-  Reproduces Figure 4. Models the metabolic trade-off between the "tax" of maintaining SST gating and the "profit" of hyperbolic signaling.
-
+  Reproduces Figure 4. Models the metabolic trade-off between the 'tax' of maintaining SST gating and the 'profit' of hyperbolic signaling, demonstrating the 'Landauer Deficit' accessible to healthy networks but lost in pruned (Alzheimer's-like) topologies.
+  
 ## Citation
 
 If you use this code or the CAH framework in your research, please cite the manuscript:
