@@ -1,28 +1,68 @@
-# Dendritic Curvature Adaptation (CAH)
+# Dynamic Curvature Adaptation
 
-This repository contains the simulation framework for the **Curvature Adaptation Hypothesis (CAH)**, proposing that the brain utilizes SST-interneuron mediated dendritic shunting to dynamically regulate functional manifold curvature.
+This repository contains the official simulation suite for the Curvature Adaptation Hypothesis (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry.
+
+Manuscript available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
 
 ## Overview
-The core simulation uses **Ollivier-Ricci Curvature** and **Optimal Transport** to demonstrate a non-linear phase transition from Euclidean to Hyperbolic regimes in hierarchical neural topologies.
 
-## Key Features
-- **Hierarchical Graph Generation:** Balanced Cayley trees representing cortical hierarchies.
-- **Topological Null Models:** Degree-preserving scrambled graphs via double-edge swapping.
-- **Curvature Analysis:** Calculation of 1-Wasserstein distances using the Earth Mover's Distance (EMD) algorithm.
+The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not reside in a fixed geometric manifold. Instead, it dynamically "warps" its functional space to match the hierarchical depth of incoming data. We identify Somatostatin (SST) interneuron-mediated dendritic shunting as a biophysical actuator that regulates the apical-somatic conductance ratio (γ) to serve as a geometric switch.
+
+By modulating this switch, the cortex can transition from a stable Euclidean regime (κ≈0) to a deep Hyperbolic regime (κ<0), unlocking a global "signaling tax haven" for efficient hierarchical inference.
+
+### Key Theoretical Findings
+
+**Topological Robustness:** The hyperbolic phase transition is driven by local synaptic density rather than global architectural order. It survives degree-preserving scrambling but collapses under synaptic loss.
+
+**Geometric Trilogy:** We model cognitive health and disease as distinct functional states:
+
+        Healthy: Tunable flexibility between flat and hyperbolic manifolds.
+
+        Manic: "Geometric Inelasticity" (forced hyperbolicity) via VIP-like hub nodes.
+
+        Demented: "Geometric Collapse" (trapped Euclidean) via stochastic pruning.
 
 ## Installation
-Requires Python 3.8+ and the following libraries:
-- `networkx`
-- `pot` (Python Optimal Transport)
-- `numpy`
-- `matplotlib`
 
-## Usage
-To run the primary simulation and generate the "Spherical Bulge" vs "Flat Manifold" plots:
-```bash
-python run_cah_local.py
+This project requires Python 3.8+ and the following scientific libraries:
+```
+pip install networkx numpy matplotlib pot tqdm joblib
 ```
 
-## Results
+### Simulation Suite
 
-![Curvature Scaling Results](CAH_Scaling_Result.png)
+
+**1. Finite-Size Scaling and Robustness** (run_CAH_scaling_analysis.py)
+
+  Reproduces Figure 1 from the manuscript. It tests the scale-invariance of the phase transition across depths (N=3,5,7) and compares the hierarchy against a scrambled null model.
+  Optimization: Utilizes a Sparse Neighborhood Transport algorithm to reduce computational complexity for large graphs (N=7, ~8500 nodes), ignoring zero-mass entries in the distance matrix to accelerate the OT solver.
+
+**2. Pathological Hubs (Manic State)** (run_CAH_with_Hubs.py)
+
+  Reproduces Figure 2. Introduces high-centrality "VIP-like" hub nodes to demonstrate how hyper-connectivity abolishes the Euclidean "rest" state.
+
+**3. Synaptic Pruning (Geometric Collapse)** (run_CAH_Pruning.py)
+
+  Reproduces Figure 3. Simulates the 30% stochastic spine loss characteristic of Alzheimer’s disease to demonstrate the loss of geometric depth.
+
+**4. Metabolic ROI Tracker** (energy_ROI_tracker.py)
+
+  Reproduces Figure 4. Models the metabolic trade-off between the "tax" of maintaining SST gating and the "profit" of hyperbolic signaling.
+
+## Citation
+
+If you use this code or the CAH framework in your research, please cite the manuscript:
+
+```
+@article{pender2026dynamic,
+  title={Dynamic Curvature Adaptation: SST-Mediated Gating Unlocks Hyperbolic Efficiency in Hierarchical Networks},
+  author={Pender, Matthew A.},
+  year={2026},
+  journal={Zenodo Pre-print},
+  doi={10.5281/zenodo.18653519}
+}
+```
+
+## Acknowledgments
+
+This research was assisted by Gemini 3 Flash and Gemini 3 Pro for drafting text, generating simulation code, and structural argument analysis.
