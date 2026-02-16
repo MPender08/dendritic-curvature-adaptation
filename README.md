@@ -55,7 +55,7 @@ If you use this code or the CAH framework in your research, please cite the manu
 
 ```
 @article{pender2026dynamic,
-  title={Dynamic Curvature Adaptation: SST-Mediated Gating Unlocks Hyperbolic Efficiency in Hierarchical Networks},
+  title={Dynamic Curvature Adaptation: A Unified Geometric Theory of Cortical State and Pathological Collapse},
   author={Pender, Matthew A.},
   year={2026},
   journal={Zenodo Pre-print},
