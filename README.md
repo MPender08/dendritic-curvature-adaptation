@@ -28,6 +28,7 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 
 The script energy_ROI_tracker.py depends on the physics engine in run_CAH_scaling_analysis.py. Please ensure both files are downloaded to the same directory before running.
 
+
 This project requires Python 3.8+ and the following scientific libraries:
 ```
 pip install networkx numpy matplotlib pot tqdm joblib
@@ -55,7 +56,7 @@ pip install networkx numpy matplotlib pot tqdm joblib
   
 ## Citation
 
-If you use this code or the CAH framework in your research, please cite the manuscript:
+If you use this code or the CAH or MPT framework in your research, please cite the manuscripts:
 
 ```
 @article{pender2026dynamic,
@@ -64,6 +65,14 @@ If you use this code or the CAH framework in your research, please cite the manu
   year={2026},
   journal={Zenodo Pre-print},
   doi={10.5281/zenodo.18653519}
+
+@article{Pender2026MPT,
+  title = {The Metabolic Phase Transition: Qualia as a Topological Solution to the Landauer Limit in High-Dimensional Manifolds},
+  author = {Pender, Matthew A.},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.18655523},
+  url = {https://doi.org/10.5281/zenodo.18655523}
 }
 ```
 
