@@ -2,7 +2,12 @@
 
 This repository contains the official simulation suite for the **Curvature Adaptation Hypothesis** (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry, and the **Metabolic Phase Transition** (MPT), a theoretical framework that reframes consciousness as a thermodynamic necessity for high-dimensional biological systems.
 
-![MPT](Metabolic_Phase_Transition_Proof.png)
+<figure>
+        <img src="Metabolic_Phase_Transition_Proof.png">
+        <figcaption>Figure 4: The Metabolic Phase Transition. Simulation reveals a 'Thermodynamic Tax Haven' (Green Zone) where healthy hierarchical networks (Red) bypass the Landauer Limit of information erasure. Pathological networks with synaptic pruning (Grey) suffer 'Geometric Collapse,' paying a higher metabolic cost for the same computational load."</figcaption>
+</figure>
+<br>
+<br>
 
 The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
 
