@@ -63,8 +63,9 @@ If you use this code or the CAH or MPT framework in your research, please cite t
   title={Dynamic Curvature Adaptation: A Unified Geometric Theory of Cortical State and Pathological Collapse},
   author={Pender, Matthew A.},
   year={2026},
-  journal={Zenodo Pre-print},
-  doi={10.5281/zenodo.18653519}
+  publisher = {Zenodo}
+  doi = {10.5281/zenodo.18615180}
+  url = {https://doi.org/10.5281/zenodo.18615180}
 
 @article{Pender2026MPT,
   title = {The Metabolic Phase Transition: Qualia as a Topological Solution to the Landauer Limit in High-Dimensional Manifolds},
