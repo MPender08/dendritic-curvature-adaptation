@@ -38,7 +38,7 @@ The script energy_ROI_tracker.py depends on the physics engine in run_CAH_scalin
 
 This project requires Python 3.8+ and the following scientific libraries:
 ```
-pip install networkx numpy matplotlib pot tqdm joblib
+pip install networkx numpy matplotlib pot tqdm joblib scipy
 ```
 
 ### Simulation Suite
