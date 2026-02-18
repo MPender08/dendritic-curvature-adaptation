@@ -33,7 +33,7 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 
 ## Installation
 
-The script energy_ROI_tracker.py depends on the physics engine in run_CAH_scaling_analysis.py. Please ensure both files are downloaded to the same directory before running.
+The script **energy_ROI_tracker.py** depends on the physics engine in **run_CAH_scaling_analysis.py**. Please ensure **both files** are downloaded to the same directory before running.
 
 
 This project requires Python 3.8+ and the following scientific libraries:
