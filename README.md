@@ -45,19 +45,31 @@ pip install networkx numpy matplotlib pot tqdm joblib scipy
 
 
 **1. Finite-Size Scaling and Robustness** (run_CAH_scaling_analysis.py)
+```bash
+python run_CAH_scaling_analysis.py
+```
 
   Reproduces Figure 1 from the manuscript. It tests the scale-invariance of the phase transition across depths (N=3,5,7) and compares the hierarchy against a scrambled null model.
   Optimization: Utilizes a Sparse Neighborhood Transport algorithm to reduce computational complexity for large graphs (N=7, ~8500 nodes), ignoring zero-mass entries in the distance matrix to accelerate the OT solver.
 
 **2. Pathological Hubs (Manic State)** (run_CAH_with_Hubs.py)
+```bash
+python run_CAH_with_Hubs.py
+```
 
   Reproduces Figure 2. Introduces high-centrality "VIP-like" hub nodes to demonstrate how hyper-connectivity abolishes the Euclidean "rest" state.
 
 **3. Synaptic Pruning (Geometric Collapse)** (run_CAH_Pruning.py)
+```bash
+python run_CAH_Pruning.py
+```
 
   Reproduces Figure 3. Simulates the 30% stochastic spine loss characteristic of Alzheimer’s disease to demonstrate the loss of geometric depth.
 
 **4. Metabolic ROI Tracker** (energy_ROI_tracker.py)
+```bash
+python energy_ROI_tracker.py
+```
 
   Reproduces Figure 4. Models the metabolic trade-off between the 'tax' of maintaining SST gating and the 'profit' of hyperbolic signaling, demonstrating the 'Landauer Deficit' accessible to healthy networks but lost in pruned (Alzheimer's-like) topologies.
   
