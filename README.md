@@ -35,9 +35,13 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 
 The script **energy_ROI_tracker.py** depends on the physics engine in **run_CAH_scaling_analysis.py**. Please ensure **both files** are downloaded to the same directory before running.
 
+```bash
+git clone https://github.com/MPender08/dendritic-curvature-adaptation.git
+cd dendritic-curvature-adaptation
+```
 
 This project requires Python 3.8+ and the following scientific libraries:
-```
+```bash
 pip install networkx numpy matplotlib pot tqdm joblib scipy
 ```
 
