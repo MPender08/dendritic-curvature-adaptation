@@ -15,7 +15,7 @@ The Metabolic Phase Transition manuscript is available here: [https://doi.org/10
 
 ## Overview
 
-The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not reside in a fixed geometric manifold. Instead, it dynamically "warps" its functional space to match the hierarchical depth of incoming data. We identify Somatostatin (SST) interneuron-mediated dendritic shunting as a biophysical actuator that regulates the apical-somatic conductance ratio (γ) to serve as a geometric switch.
+The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not reside in a fixed geometric manifold. Instead, it dynamically "warps" its functional space to match the hierarchical depth of incoming data. We identify a plausible biophysical actuator—the Martinotti-cell subtype of Somatostatin (SST) interneurons—that regulates the apical-somatic conductance ratio (γ) to serve as a geometric switch.
 
 By modulating this switch, the cortex can transition from a stable Euclidean regime (κ≈0) to a deep Hyperbolic regime (κ<0), unlocking a global "signaling tax haven" for efficient hierarchical inference.
 
