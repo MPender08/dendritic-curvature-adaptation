@@ -13,6 +13,10 @@ The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/
 
 The Metabolic Phase Transition manuscript is available here: [https://doi.org/10.5281/zenodo.18655523](https://doi.org/10.5281/zenodo.18655523)
 
+I also used the framework from these two manuscripts to design a "Manifold Chip," where analog transistors act as "SST cells," dumping data to ground to save energy, or opening up to warp the chip's effective geometry into hyperbolic space exactly when the data requires it. 
+
+The Manifold Chip manuscript is available here: [https://doi.org/10.5281/zenodo.18717807](https://doi.org/10.5281/zenodo.18717807)
+
 ## Overview
 
 The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not reside in a fixed geometric manifold. Instead, it dynamically "warps" its functional space to match the hierarchical depth of incoming data. We identify a plausible biophysical actuator—the Martinotti-cell subtype of Somatostatin (SST) interneurons—that regulates the apical-somatic conductance ratio (γ) to serve as a geometric switch.
