@@ -14,8 +14,11 @@ File Structure:
 Instructions:
 1. Ensure both run_CAH_scaling_analysis.py AND energy_ROI_tracker.py are in the SAME folder.
 2. Install dependencies: pip install -r requirements.txt
-3. Run the main simulation: python simulation.py
-
+3. Run the main simulation: python run_CAH_scaling_analysis.py
+                            python run_CAH_with_Hubs.py
+                            python run_CAH_Pruning.py
+                            python energy_ROI_tracker.py
 Output:
-The script will generate figure files (e.g., 'CAH_Scaling.jpg') in the current directory.
+The script will generate figure files in the current directory.
+
 
