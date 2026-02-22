@@ -15,7 +15,11 @@ The Metabolic Phase Transition manuscript is available here: [https://doi.org/10
 
 I also used the framework from these two manuscripts to design a "Manifold Chip," where analog transistors act as "SST cells," dumping data to ground to save energy, or opening up to warp the chip's effective geometry into hyperbolic space exactly when the data requires it. 
 
-The Manifold Chip manuscript is available here: [https://doi.org/10.5281/zenodo.18717807](https://doi.org/10.5281/zenodo.18717807)
+The Manifold Chip manuscript is available here: 
+
+[https://doi.org/10.5281/zenodo.18717807](https://doi.org/10.5281/zenodo.18717807)
+
+https://github.com/MPender08/manifold-chip-architecture
 
 ## Overview
 
