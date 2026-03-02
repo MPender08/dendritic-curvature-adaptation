@@ -4,7 +4,7 @@ This repository contains the official simulation suite for the **Curvature Adapt
 
 <figure>
         <img src="Metabolic_Phase_Transition_Proof.png">
-        <figcaption>Figure 4: The Metabolic Phase Transition. Simulation reveals a 'Thermodynamic Tax Haven' (Green Zone) where healthy hierarchical networks (Red) bypass the Landauer Limit of information erasure. Pathological networks with synaptic pruning (Grey) suffer 'Geometric Collapse,' paying a higher metabolic cost for the same computational load."</figcaption>
+        <figcaption>Figure 5: The Metabolic Phase Transition. Simulation reveals a 'Thermodynamic Tax Haven' (Green Zone) where healthy hierarchical networks (Red) bypass the Landauer Limit of information erasure. Pathological networks with synaptic pruning (Grey) suffer 'Geometric Collapse,' paying a higher metabolic cost for the same computational load."</figcaption>
 </figure>
 <br>
 <br>
@@ -27,6 +27,12 @@ The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not r
 
 By modulating this switch, the cortex can transition from a stable Euclidean regime (κ≈0) to a deep Hyperbolic regime (κ<0), unlocking a global "signaling tax haven" for efficient hierarchical inference.
 
+<figure>
+        <img src="biological_manifold.png">
+        <figcaption>Figure 2: Spiking Neural Network Validation: A PyNEST simulation of 280 integrate-and-fire neurons demonstrating the topological phase transition. Left (0-500ms): Heavy SST interneuron gating (red) suppresses Pyramidal cell activity (blue), locking the network in a low-energy Euclidean baseline. Right                 (500-1000ms): A step-current triggers VIP interneurons (green), which selectively shunt the SST gates. This disinhibition allows the Pyramidal network to spontaneously self-organize into highly synchronized 40Hz gamma-band pillars, physically executing the macroscopic hyperbolic plunge.
+        </figcaption>
+</figure>
+
 ### Key Theoretical Findings
 
 **Topological Robustness:** The hyperbolic phase transition is driven by local synaptic density rather than global architectural order. It survives degree-preserving scrambling but collapses under synaptic loss.
@@ -42,6 +48,8 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 ## Installation
 
 The script **energy_ROI_tracker.py** depends on the physics engine in **run_CAH_scaling_analysis.py**. Please ensure **both files** are downloaded to the same directory before running.
+
+Note: The PyNEST simulation requires NEST to be installed.
 
 ```bash
 git clone https://github.com/MPender08/dendritic-curvature-adaptation.git
@@ -85,28 +93,6 @@ python energy_ROI_tracker.py
 
   Reproduces Figure 4. Models the metabolic trade-off between the 'tax' of maintaining SST gating and the 'profit' of hyperbolic signaling, demonstrating the 'Landauer Deficit' accessible to healthy networks but lost in pruned (Alzheimer's-like) topologies.
   
-## Citation
-
-If you use this code or the CAH or MPT framework in your research, please cite the manuscripts:
-
-```
-@article{pender2026dynamic,
-  title={Dynamic Curvature Adaptation: A Unified Geometric Theory of Cortical State and Pathological Collapse},
-  author={Pender, Matthew A.},
-  year={2026},
-  publisher = {Zenodo}
-  doi = {10.5281/zenodo.18615180}
-  url = {https://doi.org/10.5281/zenodo.18615180}
-
-@article{Pender2026MPT,
-  title = {The Metabolic Phase Transition: Qualia as a Topological Solution to the Landauer Limit in High-Dimensional Manifolds},
-  author = {Pender, Matthew A.},
-  year = {2026},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.18655523},
-  url = {https://doi.org/10.5281/zenodo.18655523}
-}
-```
 
 ## Acknowledgments
 
