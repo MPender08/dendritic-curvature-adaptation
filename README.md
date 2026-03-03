@@ -29,7 +29,7 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 
 <figure>
         <img src="biological_manifold.png">
-        <figcaption>Figure 2: Spiking Neural Network Validation: A PyNEST simulation of 280 integrate-and-fire neurons demonstrating the topological phase transition. Left (0-500ms): Heavy SST interneuron gating (red) suppresses Pyramidal cell activity (blue), locking the network in a low-energy Euclidean baseline. Right                 (500-1000ms): A step-current triggers VIP interneurons (green), which selectively shunt the SST gates. This disinhibition allows the Pyramidal network to spontaneously self-organize into highly synchronized 40Hz gamma-band pillars, physically executing the macroscopic hyperbolic plunge.
+        <figcaption>Figure 2: Spiking Neural Network Validation: A PyNEST simulation of 280 integrate-and-fire neurons demonstrating the topological phase transition. Left (0-500ms): Heavy SST interneuron gating (red) suppresses Pyramidal cell activity (blue), locking the network in a low-energy Euclidean baseline. Right                 (500-1000ms): A step-current triggers VIP interneurons (green), which selectively shunt the SST gates. This disinhibition allows the Pyramidal network to spontaneously self-organize into highly synchronized 40Hz gamma-band pillars.
         </figcaption>
 </figure>
 
