@@ -94,4 +94,4 @@ python energy_ROI_tracker.py
 
 ## Acknowledgments
 
-This research was assisted by Gemini 3 Flash and Gemini 3 Pro for drafting text, generating simulation code, and structural argument analysis. AI was used as a symbolic reasoning engine to assist in mapping biophysical parameters to differential geometric formalisms.
+Gemini AI was utilized as an interactive technical sounding board to rapidly prototype structural arguments and optimize PyTorch/NEST simulations. The author takes full and exclusive responsibility for the originality, validity, and final synthesis of the theoretical framework presented herein.
