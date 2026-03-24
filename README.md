@@ -1,6 +1,6 @@
 # Dynamic Curvature Adaptation
 
-This repository contains the official simulation suite for the **Curvature Adaptation Hypothesis** (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry, and the **Metabolic Phase Transition** (MPT), a theoretical framework that reframes consciousness as a thermodynamic necessity for high-dimensional biological systems.
+This repository contains the official simulation suite for the **Curvature Adaptation Hypothesis** (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry.
 
 <figure>
         <img src="Metabolic_Phase_Transition_Proof.png">
@@ -11,9 +11,7 @@ This repository contains the official simulation suite for the **Curvature Adapt
 
 The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
 
-The Metabolic Phase Transition manuscript is available here: [https://doi.org/10.5281/zenodo.18655523](https://doi.org/10.5281/zenodo.18655523)
-
-I also used the framework from these two manuscripts to design a "Manifold Chip," where analog transistors act as "SST cells," dumping data to ground to save energy, or opening up to warp the chip's effective geometry into hyperbolic space exactly when the data requires it. 
+I also used the framework from this manuscript to design a "Manifold Chip," where analog transistors act as "SST cells," dumping data to ground to save energy, or opening up to warp the chip's effective geometry into hyperbolic space exactly when the data requires it. 
 
 The Manifold Chip manuscript is available here: 
 
