@@ -41,7 +41,7 @@ By modulating this switch, the cortex can transition from a stable Euclidean reg
 
         Manic: "Geometric Inelasticity" (forced hyperbolicity) via VIP-like hub nodes.
 
-        Demented: "Geometric Collapse" (trapped Euclidean) via stochastic pruning.
+        Neurodegenerative: "Geometric Collapse" (trapped Euclidean) via stochastic pruning.
 
 ## Installation
 
