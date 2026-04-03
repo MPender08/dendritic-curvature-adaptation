@@ -1,47 +1,39 @@
 # Dynamic Curvature Adaptation
 
-This repository contains the official simulation suite for the **Curvature Adaptation Hypothesis** (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with macroscopic functional geometry.
-
-<figure>
-        <img src="Metabolic_Phase_Transition_Proof.png">
-        <figcaption>Figure 5: The Metabolic Phase Transition. Simulation reveals a 'Thermodynamic Tax Haven' (Green Zone) where healthy hierarchical networks (Red) bypass the Landauer Limit of information erasure. Pathological networks with synaptic pruning (Grey) suffer 'Geometric Collapse,' paying a higher metabolic cost for the same computational load."</figcaption>
-</figure>
-<br>
-<br>
+This repository contains the official simulation suite for the **Curvature Adaptation Hypothesis** (CAH), a unified theory of cortical state that bridges cellular-level dendritic gating with functional geometric routing.
 
 The Dynamic Curvature Adaptation manuscript is available here: [https://doi.org/10.5281/zenodo.18615180](https://doi.org/10.5281/zenodo.18615180)
 
-I also used the framework from this manuscript to design a "Manifold Chip," where analog transistors act as "SST cells," dumping data to ground to save energy, or opening up to warp the chip's effective geometry into hyperbolic space exactly when the data requires it. 
+<figure>
+        <img src="Metabolic_Phase_Transition_Proof.png">
+</figure>        
 
-The Manifold Chip manuscript is available here: 
+**Figure 5: Thermodynamic Return on Curvature-Sensitive Control.** Simulation of total metabolic cost (C_Total) as a function of SST gating intensity (γ). **Red Line:** Healthy hierarchical networks exhibit a transition near γ ≈ 0.8, beyond which local control expenditure is offset by a marked reduction in distributed signaling burden. This indicates that the architecture can convert gating cost into a real energetic return by gaining access to a more transport-efficient routing regime. **Grey Line:** Pathological networks with 30% synaptic pruning fail to realize the same return. Although maintenance cost is still incurred, pruning raises resistance to the transition and prevents the architecture from securing a comparable reduction in signaling cost, leaving the system trapped in a more metabolically expensive regime. **Green Region:** The macroscopic thermodynamic discount—the energetic advantage obtained when local control successfully purchases more efficient large-scale routing. In later refinements of CAH, this advantage is interpreted less as a simple reward for maximal global hyperbolicity and more as evidence that selective curvature-sensitive routing can produce a genuine return on investment under the right structural conditions."
 
-[https://doi.org/10.5281/zenodo.18717807](https://doi.org/10.5281/zenodo.18717807)
 
-https://github.com/MPender08/manifold-chip-architecture
+<br>
+<br>
+
 
 ## Overview
 
-The **Curvature Adaptation Hypothesis** (CAH) proposes that the brain does not reside in a fixed geometric manifold. Instead, it dynamically "warps" its functional space to match the hierarchical depth of incoming data. We identify a plausible biophysical actuator—the Martinotti-cell subtype of Somatostatin (SST) interneurons—that regulates the apical-somatic conductance ratio (γ) to serve as a geometric switch.
+The **Curvature Adaptation Hypothesis (CAH)** proposes that the brain does not operate within a single fixed geometric manifold. Instead, it may dynamically regulate its effective information geometry in response to hierarchical demand. In its foundational form, CAH identifies a plausible biophysical actuator—the Martinotti-cell subtype of Somatostatin (SST) interneurons—which regulates the apical-somatic conductance ratio (γ) and thereby modulates access to distinct routing regimes.
 
-By modulating this switch, the cortex can transition from a stable Euclidean regime (κ≈0) to a deep Hyperbolic regime (κ<0), unlocking a global "signaling tax haven" for efficient hierarchical inference.
+Within this framework, SST-mediated gating can shift cortical dynamics from a relatively flat baseline (κ≈0) toward more transport-efficient negative-curvature routing conditions (κ<0). The key claim is not simply that “more hyperbolic is better,” but that curvature-sensitive routing can reduce the effective relay burden of hierarchical inference, allowing the cortex to secure a real thermodynamic advantage under the right structural conditions.
 
-<figure>
-        <img src="biological_manifold.png">
-        <figcaption>Figure 2: Spiking Neural Network Validation: A PyNEST simulation of 280 integrate-and-fire neurons demonstrating the topological phase transition. Left (0-500ms): Heavy SST interneuron gating (red) suppresses Pyramidal cell activity (blue), locking the network in a low-energy Euclidean baseline. Right                 (500-1000ms): A step-current triggers VIP interneurons (green), which selectively shunt the SST gates. This disinhibition allows the Pyramidal network to spontaneously self-organize into highly synchronized 40Hz gamma-band pillars.
-        </figcaption>
-</figure>
+<figure> <img src="biological_manifold.png"> <figcaption>Figure 2: Spiking Neural Network Validation. A PyNEST simulation of 280 integrate-and-fire neurons illustrating a plausible microcircuit mechanism for curvature-sensitive routing control. Left (0-500ms): Strong SST interneuron gating (red) suppresses pyramidal cell activity (blue), maintaining the network in a relatively conservative baseline regime. Right (500-1000ms): A step current activates VIP interneurons (green), which suppress the SST gates. This disinhibition allows the pyramidal population to spontaneously reorganize into highly synchronized 40Hz gamma-band pillars, providing a biologically plausible temporal signature of the local control dynamics that could open access to a more strongly integrated large-scale routing regime. </figcaption> </figure>
 
 ### Key Theoretical Findings
 
-**Topological Robustness:** The hyperbolic phase transition is driven by local synaptic density rather than global architectural order. It survives degree-preserving scrambling but collapses under synaptic loss.
+**Topological Robustness:** Access to the negative-curvature routing transition is supported not only by precise global architecture, but also by preserved local degree structure and synaptic availability. The transition survives degree-preserving scrambling, but becomes substantially harder to access under synaptic loss.
 
-**Geometric Trilogy:** We model cognitive health and disease as distinct functional states:
+**Pathological Failures of Geometric Regulation:** We model cognitive health and disease as distinct routing conditions rather than as simple fixed manifold states:
 
-        Healthy: Tunable flexibility between flat and hyperbolic manifolds.
+* **Healthy:** Flexible, regulated access to more transport-efficient routing regimes under hierarchical demand.
 
-        Manic: "Geometric Inelasticity" (forced hyperbolicity) via VIP-like hub nodes.
+* **Manic:** Reduced selectivity of geometric regulation, where VIP-like hub integration biases the system toward less regulated, shortcut-dominated routing.
 
-        Neurodegenerative: "Geometric Collapse" (trapped Euclidean) via stochastic pruning.
+* **Neurodegenerative:** Restricted geometric access, where stochastic pruning raises resistance to efficient hierarchical routing and degrades large-scale integrative capacity.
 
 ## Installation
 
@@ -67,7 +59,7 @@ pip install networkx numpy matplotlib pot tqdm joblib scipy
 python run_CAH_scaling_analysis.py
 ```
 
-  Reproduces Figure 1 from the manuscript. It tests the scale-invariance of the phase transition across depths (N=3,5,7) and compares the hierarchy against a scrambled null model.
+  Reproduces Figure 1 from the manuscript. Tests whether the routing transition remains accessible across depths (N=3,5,7) and under degree-preserving topological scrambling.
   Optimization: Utilizes a Sparse Neighborhood Transport algorithm to reduce computational complexity for large graphs (N=7, ~8500 nodes), ignoring zero-mass entries in the distance matrix to accelerate the OT solver.
 
 **2. Pathological Hubs (Manic State)** (run_CAH_with_Hubs.py)
@@ -75,21 +67,21 @@ python run_CAH_scaling_analysis.py
 python run_CAH_with_Hubs.py
 ```
 
-  Reproduces Figure 2. Introduces high-centrality "VIP-like" hub nodes to demonstrate how hyper-connectivity abolishes the Euclidean "rest" state.
+  Reproduces Figure 2. Introduces high-centrality “VIP-like” hub nodes to show how hyper-connectivity biases the system away from its conservative baseline and toward less regulated, shortcut-dominated routing.
 
 **3. Synaptic Pruning (Geometric Collapse)** (run_CAH_Pruning.py)
 ```bash
 python run_CAH_Pruning.py
 ```
 
-  Reproduces Figure 3. Simulates the 30% stochastic spine loss characteristic of Alzheimer’s disease to demonstrate the loss of geometric depth.
+  Reproduces Figure 3. Simulates 30% stochastic spine loss to show how neurodegenerative pruning restricts geometric access and degrades hierarchical integration.
 
 **4. Metabolic ROI Tracker** (energy_ROI_tracker.py)
 ```bash
 python energy_ROI_tracker.py
 ```
 
-  Reproduces Figure 4. Models the metabolic trade-off between the 'tax' of maintaining SST gating and the 'profit' of hyperbolic signaling, demonstrating the 'Landauer Deficit' accessible to healthy networks but lost in pruned (Alzheimer's-like) topologies.
+  Reproduces Figure 4. Quantifies the metabolic ROI of SST-mediated gating by comparing local control cost against reduced distributed signaling burden in healthy versus pruned networks.
   
 
 ## Acknowledgments
