@@ -23,18 +23,6 @@ Within this framework, SST-mediated gating can shift cortical dynamics from a re
 
 <figure> <img src="biological_manifold.png"> <figcaption>Figure 2: Spiking Neural Network Validation. A PyNEST simulation of 280 integrate-and-fire neurons illustrating a plausible microcircuit mechanism for curvature-sensitive routing control. Left (0-500ms): Strong SST interneuron gating (red) suppresses pyramidal cell activity (blue), maintaining the network in a relatively conservative baseline regime. Right (500-1000ms): A step current activates VIP interneurons (green), which suppress the SST gates. This disinhibition allows the pyramidal population to spontaneously reorganize into highly synchronized 40Hz gamma-band pillars, providing a biologically plausible temporal signature of the local control dynamics that could open access to a more strongly integrated large-scale routing regime. </figcaption> </figure>
 
-### Key Theoretical Findings
-
-**Topological Robustness:** Access to the negative-curvature routing transition is supported not only by precise global architecture, but also by preserved local degree structure and synaptic availability. The transition survives degree-preserving scrambling, but becomes substantially harder to access under synaptic loss.
-
-**Pathological Failures of Geometric Regulation:** We model cognitive health and disease as distinct routing conditions rather than as simple fixed manifold states:
-
-* **Healthy:** Flexible, regulated access to more transport-efficient routing regimes under hierarchical demand.
-
-* **Manic:** Reduced selectivity of geometric regulation, where VIP-like hub integration biases the system toward less regulated, shortcut-dominated routing.
-
-* **Neurodegenerative:** Restricted geometric access, where stochastic pruning raises resistance to efficient hierarchical routing and degrades large-scale integrative capacity.
-
 ## Installation
 
 The script **energy_ROI_tracker.py** depends on the physics engine in **run_CAH_scaling_analysis.py**. Please ensure **both files** are downloaded to the same directory before running.
